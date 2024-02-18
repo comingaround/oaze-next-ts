@@ -1,0 +1,108 @@
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.NavList {
+    display: flex;
+    gap: 24px;
+    visibility: visible;
+    opacity: 1;
+    padding: 0 24px;
+}
+.NavList,
+.NavIcons {
+    /* padding-top: 50px; */
+    align-items: center;
+}
+.NavList a {
+    font-size: max(1rem, 14px);
+    font-weight: 300;
+    opacity: 0.5;
+}
+.NavIcons {
+    display: flex;
+    gap: 16px;
+}
+.BurgerOn {
+    display: none;
+}
+.NavBar ul p {
+    display: none;
+}
+.LoginButton {
+    display: none;
+}
+.LogoDesk {
+    width: max(10vw, 407px);
+}
+.LogoDesk img {
+    width: 100%;
+    height: 100%;
+}
+.LogoMob {
+    display: none;
+}
+.LogoMob img {
+    width: 30%;
+}
+.NavList a.activePath {
+    text-decoration: underline;
+    opacity: 1;
+}
+@media (max-width: 768px) {
+    .NavList {
+        visibility: hidden;
+        display: block;
+        position: absolute;
+        width: calc(100% - 40px);
+        z-index: 10;
+        padding: 16px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .NavList > * {
+        padding: 12.5px 0;
+    }
+    .NavList a {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+    }
+    .NavBar ul p {
+        display: block;
+        padding-right: 4px;
+    }
+    .NavIcons {
+        padding-top: 20px;
+    }
+    .BurgerOn {
+        display: block;
+    }
+    .LoginIcon {
+        display: none;
+    }
+    .LogoMob {
+        display: flex;
+        justify-content: space-between;
+    }
+    .LogoDesk {
+        padding-right: 48px;
+    }
+    .LoginButton {
+        display: flex;
+        justify-content: center;
+        padding-top: 27.5px;
+    }
+    .LoginButton a {
+        padding: 14px max(20vw, 100px);
+        text-align: center;
+        color: white;
+        background-color: black;
+        border-radius: 33px;
+        opacity: 1;
+    }
+  }
+  
+  
