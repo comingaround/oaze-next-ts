@@ -1,7 +1,9 @@
 .NavBar {
     display: flex;
-    justify-content: space-between;
     width: 100%;
+    padding: 0 32px;
+    position: absolute;
+    z-index: 10;
 }
 .NavList {
     display: flex;
@@ -9,11 +11,16 @@
     visibility: visible;
     opacity: 1;
     padding: 0 24px;
+    flex-grow: 2;
+    padding-left: calc(10% - 2px);
+}
+.NavList ul {
+    align-self: center;
 }
 .NavList,
 .NavIcons {
-    /* padding-top: 50px; */
     align-items: center;
+    padding-bottom: 32px;
 }
 .NavList a {
     font-size: max(1rem, 14px);
@@ -34,7 +41,8 @@
     display: none;
 }
 .LogoDesk {
-    width: max(10vw, 407px);
+    margin-top: 32px;
+    width: 33%;
 }
 .LogoDesk img {
     width: 100%;
@@ -51,16 +59,20 @@
     opacity: 1;
 }
 @media (max-width: 768px) {
+    .NavBar {
+        justify-content: space-between;
+    }
     .NavList {
         visibility: hidden;
         display: block;
         position: absolute;
-        width: calc(100% - 40px);
+        width: calc(100% - 60px);
         z-index: 10;
         padding: 16px;
         background-color: white;
         border: 1px solid black;
         border-radius: 10px;
+        margin-top: 16px;
     }
     .NavList > * {
         padding: 12.5px 0;
@@ -75,7 +87,7 @@
         padding-right: 4px;
     }
     .NavIcons {
-        padding-top: 20px;
+        padding-top: 30px;
     }
     .BurgerOn {
         display: block;
@@ -88,7 +100,7 @@
         justify-content: space-between;
     }
     .LogoDesk {
-        padding-right: 48px;
+        margin-top: 16px;
     }
     .LoginButton {
         display: flex;
@@ -104,5 +116,13 @@
         opacity: 1;
     }
   }
+  @media (max-width: 475px) {
+    .LogoDesk {
+        margin-top: 0;
+    }
+    .LogoDesk img {
+        width: 125%;
+    }
+}
   
   
