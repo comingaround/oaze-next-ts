@@ -1,0 +1,76 @@
+.sliderOne {
+    padding: 0 0 32px;
+}
+.sliderCont {
+    width: 100%;
+}
+.swiperCont {
+    width: 100%;
+    position: relative;
+    padding: 0 32px;
+    background-color: white;
+}
+.swiper-slide {
+    position: relative;       
+    width: 370px;
+    aspect-ratio: 1 / 1.5;
+    padding-top: 70px;
+}
+.swiperImage {
+    display: block;
+    height: 120%;
+    width: 100%;
+    object-fit: cover;
+}
+.swiper-slide-text h3 {
+    font-family: 'Romie Trial';
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 140%;
+}
+.swiper-slide-text h6 {
+    font-size: 1.12rem;
+    font-weight: 375;
+    line-height: 140%;
+}
+.swiper-slide-text p {
+    font-size: 1rem;
+    font-weight: 375;
+    line-height: 110%;
+}
+.swiper-slide-text {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+.swiper-slide:hover .swiper-slide-text {
+    opacity: 1;
+    transition: opacity 1s linear;
+}
+.swiper-button-prev {
+    position: absolute;
+    top: 23px;
+    width: 40px;
+    height: 40px;
+    left: calc(100% - 152px);
+    color: black;
+    
+}
+.swiper-button-next {
+    position: absolute;
+    top: 23px;
+    width: 40px;
+    height: 40px;
+    right: 32px;
+    color: black;
+}
+@media (max-width: 768px) {
+    .swiper-slide-text {
+        opacity: 1;
+    }
+}
+@media (max-width: 475px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+}
