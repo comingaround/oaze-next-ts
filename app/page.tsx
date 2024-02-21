@@ -1,9 +1,11 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Slider from "./components/slider/slider";
 import NavBar from "./components/navbar/navbar";
 import Hero from "./components/hero/hero";
 import SliderOne from "./components/sliderOne/sliderOne";
+import HeroTwo from "./components/heroTwo/heroTwo";
+import GalleryTwo from "./components/GalleryTwo/GalleryTwo";
+import SliderTwo from "./components/sliderTwo/SliderTwo";
+import TextArea from "./components/TextArea/TextArea";
+import HeroThree from "./components/HeroThree/HeroThree";
 
 export default function Home() {
   return (
@@ -11,6 +13,11 @@ export default function Home() {
       <NavBar />
       <Hero />
       <SliderOne />
+      <HeroTwo />
+      <GalleryTwo />
+      <SliderTwo />
+      <TextArea />
+      <HeroThree />
     </main>
   );
 }

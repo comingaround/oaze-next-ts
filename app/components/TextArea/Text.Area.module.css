@@ -1,0 +1,45 @@
+.TextArea {
+    width: 60%;
+    position: relative;
+    left: 33%;
+    padding: 140px 32px 120px;
+}
+.TextArea p {
+    font-family: "Romie Trial";
+    font-size: 4.2rem;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -1.36px;
+}
+.TextArea p span {
+    font-style: italic;
+}
+@media (max-width: 1024px) {
+    .TextArea {
+        width: 80%;
+        left: 20%;
+    }
+}
+@media (max-width: 768px) {
+    .TextArea {
+        width: 60%;
+        left: 40%;
+        top: -80vh;
+        position: absolute;
+    }
+}
+@media (max-width: 600px) {
+    .TextArea {
+        width: 60%;
+        left: 40%;
+        top: -90vh;
+    }
+}
+@media (max-width: 475px) {
+    .TextArea {
+        top: 0;
+        width: 100%;
+        left: 0;
+        position: relative;
+    }
+}

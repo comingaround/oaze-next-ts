@@ -33,23 +33,23 @@ export default function NavBar() {
                 </div>
                 <Link href="/" className={isActive('/')}>
                     <li>NAUJA KOLEKCIJA</li>
-                    <p>-&gt;</p>
+                    <p>&rarr;</p>
                 </Link>
                 <a href="">
                     <li>PROGOMS</li>
-                    <p>-&gt;</p>
+                    <p>&rarr;</p>
                 </a>
                 <a href="">
                     <li>KASDIENAI</li>
-                    <p>-&gt;</p>
+                    <p>&rarr;</p>
                 </a>
                 <a href="">
                     <li>APIE MUS</li>
-                    <p>-&gt;</p>
+                    <p>&rarr;</p>
                 </a>
                 <a href="">
                     <li>KONTAKTAI</li>
-                    <p>-&gt;</p>
+                    <p>&rarr;</p>
                 </a>
                 <div className={styles.LoginButton}>
                     <a href="#">Login</a>

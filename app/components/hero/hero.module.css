@@ -20,7 +20,7 @@
     height: 100%;
 }
 .hero > div:first-child h1 {
-    font-family: "Romie Trial", sans-serif;
+    font-family: "Romie Trial";
     font-size: 4.8rem;
     font-weight: 400;
     line-height: 97%; /* 65.96px */

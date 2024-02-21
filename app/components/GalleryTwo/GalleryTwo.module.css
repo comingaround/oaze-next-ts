@@ -1,0 +1,99 @@
+.GalleryTwo {
+    padding: 0 32px 32px;
+}
+.GalleryTwo > div:first-child {
+    display: flex;
+    gap: 17.5vw;
+}
+.GalleryTwo > div:first-child h1 {
+    text-wrap: nowrap;
+    font-family: "Romie Trial";
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 97%;
+    letter-spacing: -0.96px;
+}
+.GalleryTwo > div:first-child p {
+    font-size: 1.4rem;
+    font-weight: 375;
+    line-height: 140%;
+    width: 60vw;
+}
+.GalleryImg {
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.GalleryImg section {
+    width: 33%;
+}
+.GalleryImg section > div:first-child {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 /4;
+}
+.GalleryImg section > div:last-child {
+    padding: 20px 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.GalleryImg section:hover > div:last-child {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+.GalleryImg section > div:last-child h1 {
+    font-family: "Romie Trial";
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 140%;
+}
+.GalleryImg section > div:last-child h3 {
+    font-size: 1.12rem;
+    font-weight: 375;
+    line-height: 140%; /* 22.4px */
+}
+.GalleryImg section > div:last-child p {
+    padding-top: 14px;
+    font-size: max(1rem, 12px);
+    font-weight: 375;
+    line-height: 110%;
+}
+.GalleryImg img {
+    width: 100%;
+}
+@media (max-width: 1023px) {
+    .GalleryImg {
+        justify-content: center;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .GalleryImg section {
+        width: 50%;
+    }
+}
+@media (max-width: 768px) {
+    .GalleryTwo > div:first-child {
+        display: block;
+    }
+    .GalleryTwo > div:first-child p {
+        width: 100%;
+        padding-top: 64px;
+    }
+    .GalleryImg {
+        padding-top: 64px;
+    }
+    .GalleryImg section {
+        width: 75%;
+    }
+    .GalleryImg section > div:last-child {
+        opacity: 1;
+    }
+    .GalleryImg section > div:last-child p {
+        padding-bottom: 48px;
+    }
+}
+@media (max-width:475px) {
+    .GalleryImg section {
+        width: 100%;
+    }
+}

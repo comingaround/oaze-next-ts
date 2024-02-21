@@ -1,0 +1,101 @@
+div:nth-child(7) > section div.swiper-button-prev,
+div:nth-child(7) > section div.swiper-button-next {
+    color:white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 35px;
+}
+div:nth-child(7) > section div.swiper-button-prev {
+    left: var(--swiper-navigation-sides-offset, 7.5vw);
+    top: var(--swiper-navigation-top-offset, 45%);
+    padding-right: 40px;
+}
+div:nth-child(7) > section div.swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 7.5vw);
+    top: var(--swiper-navigation-top-offset, 45%);
+    padding-left: 40px;
+}
+.sliderOne2 {
+    width: 66%;
+}
+.sliderCont2 {
+    width: 100%;
+    height: 100%;
+}
+.swiperCont2 {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.swiper_slide_text2 {
+    color: white;
+    padding-top: 5%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+.swiper_slide_text2 h3 {
+    text-align: center;
+    font-family: "Romie Trial";
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 140%;
+}
+.swiper_slide_text2 h6 {
+    text-align: center;
+    font-size: 1.12rem;
+    font-weight: 375;
+    line-height: 140%;
+}
+div.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 25%;
+}
+.swiper-pagination-bullet {
+    background-color: white;
+}
+div.sliderTwo_SliderTwo__gRWmp section div.swiper-wrapper div.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div.sliderTwo_SliderTwo__gRWmp section div.swiper-wrapper div.swiper-slide img {
+    width: 30%;
+    height: 50%;
+    object-fit: contain;
+}
+@media (max-width: 1024px) {
+    div.sliderTwo_SliderTwo__gRWmp section div.swiper-wrapper div.swiper-slide img {
+        width: 50%;
+        height: 70%;
+    }
+    div.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 15%;
+    }
+}
+@media (max-width: 768px) {
+    .sliderOne2 {
+        width: 100%;
+        height: 100vh;
+    }
+    div.sliderTwo_SliderTwo__gRWmp section div.swiper-wrapper div.swiper-slide img {
+        width: 60%;
+        height: 80%;
+    }
+    div.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 10%;
+    }
+}
+@media (max-width: 475px) {
+    .sliderOne2 {
+        width: 100%;
+        height: 100vh;
+    }
+    div.sliderTwo_SliderTwo__gRWmp section div.swiper-wrapper div.swiper-slide img {
+        width: 60%;
+        height: 80%;
+    }
+    div.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 20%;
+    }
+}
