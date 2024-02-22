@@ -6,6 +6,7 @@ import GalleryTwo from "./components/GalleryTwo/GalleryTwo";
 import SliderTwo from "./components/sliderTwo/SliderTwo";
 import TextArea from "./components/TextArea/TextArea";
 import HeroThree from "./components/HeroThree/HeroThree";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <SliderTwo />
       <TextArea />
       <HeroThree />
+      <Footer />
     </main>
   );
 }

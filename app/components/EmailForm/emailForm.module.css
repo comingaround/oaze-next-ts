@@ -1,0 +1,39 @@
+.EmailForm input {
+    width: 70%;
+    height: 52px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: "PP Neue Montreal";
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 375;
+    line-height: 140%;
+    margin-top: 5px;
+}
+.EmailForm button {
+    padding: 16px 56px;
+    background-color: white;
+    border: 1px solid black;
+    margin-left: 16px;
+}
+@media (max-width: 768px) {
+    .EmailForm input {
+        width: 65%;
+    }
+}
+@media (max-width: 475px) {
+    .EmailForm {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .EmailForm input {
+        margin-bottom: 32px;
+        width: 100%;
+        text-align: center;
+    }
+    .EmailForm button {
+        padding: 8px 16px;
+        margin-left: 0;
+    }
+}
