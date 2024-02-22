@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'PP Neue Montreal';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/PPNeueMontreal-Book.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Romie Trial';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/RomieTrial-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Romie Trial';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/RomieTrial-Italic.otf') format('opentype');
+}
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -31,6 +51,11 @@ ul {
   }
 }
 @media (max-width: 768px ) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 475px ) {
   html {
     font-size: 12px;
   }
